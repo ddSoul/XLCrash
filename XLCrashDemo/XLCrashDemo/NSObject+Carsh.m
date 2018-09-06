@@ -37,7 +37,7 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 - (id)xl_forwardingTargetForSelector:(SEL)sel {
     
     Class MyClass = objc_allocateClassPair([NSObject class], "MyClass", 0);
-    class_addMethod(MyClass, sel, class_getMethodImplementation([self class], @selector(unrecognized)), "V@:");
+    class_addMethod(MyClass, sel, class_getMethodImplementation([self class], @selector(unrecognizedHandler)), "V@:");
     //
     id myObjc = [[MyClass alloc] init];
     if ([myObjc respondsToSelector:sel]) {

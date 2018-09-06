@@ -20,12 +20,12 @@
     [super viewDidLoad];
     [self initUI];
     
-    [self unrecognizedCrash];
+//    [self unrecognizedCrash];
 }
 
 #pragma mark - initUI
 - (void)initUI {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 - (void)layoutCustomViews {
     
