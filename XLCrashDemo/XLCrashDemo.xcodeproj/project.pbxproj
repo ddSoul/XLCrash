@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B3FF8C22148E9E800D7C8CE /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FF8C12148E9E800D7C8CE /* NextViewController.m */; };
+		7B3FF8C62148EFBD00D7C8CE /* NSObject+Carsh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FF8C52148EFBD00D7C8CE /* NSObject+Carsh.m */; };
 		7B6AD3F721411CE700DD5233 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AD3F621411CE700DD5233 /* AppDelegate.m */; };
 		7B6AD3FA21411CE700DD5233 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AD3F921411CE700DD5233 /* ViewController.m */; };
 		7B6AD3FF21411CEA00DD5233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6AD3FE21411CEA00DD5233 /* Assets.xcassets */; };
@@ -15,7 +17,6 @@
 		7B6AD41A21411CEA00DD5233 /* XLCrashDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AD41921411CEA00DD5233 /* XLCrashDemoUITests.m */; };
 		7B6AD42921411D8300DD5233 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AD42821411D8300DD5233 /* Person.m */; };
 		7B6AD42C2141203000DD5233 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AD42B2141203000DD5233 /* Student.m */; };
-		7B6AD42F214127FD00DD5233 /* NSObject+Carsh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AD42E214127FD00DD5233 /* NSObject+Carsh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B3FF8C02148E9E800D7C8CE /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		7B3FF8C12148E9E800D7C8CE /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		7B3FF8C42148EFBD00D7C8CE /* NSObject+Carsh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Carsh.h"; sourceTree = "<group>"; };
+		7B3FF8C52148EFBD00D7C8CE /* NSObject+Carsh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Carsh.m"; sourceTree = "<group>"; };
 		7B6AD3F221411CE700DD5233 /* XLCrashDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLCrashDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6AD3F521411CE700DD5233 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B6AD3F621411CE700DD5233 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,8 +59,6 @@
 		7B6AD42821411D8300DD5233 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		7B6AD42A2141203000DD5233 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		7B6AD42B2141203000DD5233 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		7B6AD42D214127FD00DD5233 /* NSObject+Carsh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Carsh.h"; sourceTree = "<group>"; };
-		7B6AD42E214127FD00DD5233 /* NSObject+Carsh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Carsh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B3FF8C32148EFBD00D7C8CE /* XLCrash */ = {
+			isa = PBXGroup;
+			children = (
+				7B3FF8C42148EFBD00D7C8CE /* NSObject+Carsh.h */,
+				7B3FF8C52148EFBD00D7C8CE /* NSObject+Carsh.m */,
+			);
+			path = XLCrash;
+			sourceTree = "<group>";
+		};
 		7B6AD3E921411CE700DD5233 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 		7B6AD3F421411CE700DD5233 /* XLCrashDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7B3FF8C32148EFBD00D7C8CE /* XLCrash */,
 				7B6AD3F521411CE700DD5233 /* AppDelegate.h */,
 				7B6AD3F621411CE700DD5233 /* AppDelegate.m */,
 				7B6AD3F821411CE700DD5233 /* ViewController.h */,
@@ -117,8 +130,8 @@
 				7B6AD42821411D8300DD5233 /* Person.m */,
 				7B6AD42A2141203000DD5233 /* Student.h */,
 				7B6AD42B2141203000DD5233 /* Student.m */,
-				7B6AD42D214127FD00DD5233 /* NSObject+Carsh.h */,
-				7B6AD42E214127FD00DD5233 /* NSObject+Carsh.m */,
+				7B3FF8C02148E9E800D7C8CE /* NextViewController.h */,
+				7B3FF8C12148E9E800D7C8CE /* NextViewController.m */,
 			);
 			path = XLCrashDemo;
 			sourceTree = "<group>";
@@ -272,8 +285,9 @@
 				7B6AD3FA21411CE700DD5233 /* ViewController.m in Sources */,
 				7B6AD40521411CEA00DD5233 /* main.m in Sources */,
 				7B6AD42C2141203000DD5233 /* Student.m in Sources */,
-				7B6AD42F214127FD00DD5233 /* NSObject+Carsh.m in Sources */,
+				7B3FF8C22148E9E800D7C8CE /* NextViewController.m in Sources */,
 				7B6AD42921411D8300DD5233 /* Person.m in Sources */,
+				7B3FF8C62148EFBD00D7C8CE /* NSObject+Carsh.m in Sources */,
 				7B6AD3F721411CE700DD5233 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

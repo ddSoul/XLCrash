@@ -20,6 +20,7 @@
     [super viewDidLoad];
     [self initUI];
     
+    [self kvoCrash];
 //    [self unrecognizedCrash];
 }
 
@@ -32,13 +33,32 @@
 }
 
 #pragma mark - delegate Methods
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+//    if ([keyPath isEqualToString:@"name"]) {
+//        NSLog(@"%@", change);
+//    }
+//}
 
 #pragma mark - custom Methods
 - (void)unrecognizedCrash {
     Person *person = [Person new];
     [person study];
 }
+- (void)kvoCrash {
+    
 
+    
+    Person *person = [Person new];
+    
+    [person removeObserver:self forKeyPath:@"name"];
+    
+//    [person addObserver:self
+//             forKeyPath:@"name"
+//                options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew
+//                context:nil];
+    
+    
+}
 #pragma mark - touch events
 
 #pragma mark - setter,getter

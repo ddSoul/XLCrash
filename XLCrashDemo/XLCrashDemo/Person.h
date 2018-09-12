@@ -10,6 +10,9 @@
 
 @interface Person : NSObject
 
+@property (nonatomic, copy) NSString *name;
+
+
 /**
  * 测试方法，未实现
  */
